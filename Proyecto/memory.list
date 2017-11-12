@@ -1,0 +1,18 @@
+0
+100   	// CLRW   		W = 0
+0
+A80   	// INCF F 0  	F[0] = 1
+0
+A00		// INCF W 0		W = 2
+A80   	// INCF F 0		F[0] = 2
+A80   	// INCF F 0		F[0] = 3
+A80   	// INCF F 0		F[0] = 4
+0
+081		// MOVWF		F[1] = W = 2
+800		// MOVF			W = F[0] = 4
+801		// MOVF			W = F[1] = 2
+0
+780		// ADDWF		F[0] = W + F[0] = 2 + 4 = 6 
+700		// ADDWF		W = W + F[0] = 2 + 6 = 8 
+0
+0
